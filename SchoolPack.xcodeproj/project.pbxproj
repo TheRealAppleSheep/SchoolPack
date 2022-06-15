@@ -13,6 +13,9 @@
 		327622172859D555006DCF02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327622162859D555006DCF02 /* Preview Assets.xcassets */; };
 		327622192859D555006DCF02 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327622182859D555006DCF02 /* Persistence.swift */; };
 		3276221C2859D555006DCF02 /* SchoolPack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3276221A2859D555006DCF02 /* SchoolPack.xcdatamodeld */; };
+		327622242859D68F006DCF02 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327622232859D68F006DCF02 /* Launch Screen.storyboard */; };
+		327622272859D6B2006DCF02 /* Macula-Shaded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327622262859D6B2006DCF02 /* Macula-Shaded.ttf */; };
+		3276222C2859EB4C006DCF02 /* WorkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276222B2859EB4C006DCF02 /* WorkListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,10 @@
 		327622162859D555006DCF02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		327622182859D555006DCF02 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		3276221B2859D555006DCF02 /* SchoolPack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SchoolPack.xcdatamodel; sourceTree = "<group>"; };
+		327622232859D68F006DCF02 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		327622262859D6B2006DCF02 /* Macula-Shaded.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Macula-Shaded.ttf"; sourceTree = "<group>"; };
+		327622282859D72F006DCF02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3276222B2859EB4C006DCF02 /* WorkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +62,9 @@
 		3276220E2859D553006DCF02 /* SchoolPack */ = {
 			isa = PBXGroup;
 			children = (
-				3276220F2859D553006DCF02 /* SchoolPackApp.swift */,
-				327622112859D553006DCF02 /* ContentView.swift */,
+				327622282859D72F006DCF02 /* Info.plist */,
+				327622252859D69D006DCF02 /* Fonts */,
+				327622222859D67F006DCF02 /* Views */,
 				327622132859D555006DCF02 /* Assets.xcassets */,
 				327622182859D555006DCF02 /* Persistence.swift */,
 				3276221A2859D555006DCF02 /* SchoolPack.xcdatamodeld */,
@@ -71,6 +79,25 @@
 				327622162859D555006DCF02 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		327622222859D67F006DCF02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3276220F2859D553006DCF02 /* SchoolPackApp.swift */,
+				3276222B2859EB4C006DCF02 /* WorkListView.swift */,
+				327622112859D553006DCF02 /* ContentView.swift */,
+				327622232859D68F006DCF02 /* Launch Screen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		327622252859D69D006DCF02 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				327622262859D6B2006DCF02 /* Macula-Shaded.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +158,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327622242859D68F006DCF02 /* Launch Screen.storyboard in Resources */,
 				327622172859D555006DCF02 /* Preview Assets.xcassets in Resources */,
+				327622272859D6B2006DCF02 /* Macula-Shaded.ttf in Resources */,
 				327622142859D555006DCF02 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3276222C2859EB4C006DCF02 /* WorkListView.swift in Sources */,
 				327622192859D555006DCF02 /* Persistence.swift in Sources */,
 				327622122859D553006DCF02 /* ContentView.swift in Sources */,
 				3276221C2859D555006DCF02 /* SchoolPack.xcdatamodeld in Sources */,
@@ -272,14 +302,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SchoolPack/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SchoolPack/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -300,14 +333,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SchoolPack/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SchoolPack/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
