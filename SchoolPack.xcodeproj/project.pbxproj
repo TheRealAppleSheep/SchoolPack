@@ -16,6 +16,8 @@
 		327622242859D68F006DCF02 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327622232859D68F006DCF02 /* Launch Screen.storyboard */; };
 		327622272859D6B2006DCF02 /* Macula-Shaded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327622262859D6B2006DCF02 /* Macula-Shaded.ttf */; };
 		3276222C2859EB4C006DCF02 /* WorkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276222B2859EB4C006DCF02 /* WorkListView.swift */; };
+		32B62796285B37C1000768D7 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B62795285B37C0000768D7 /* ListRowView.swift */; };
+		32B62798285B3ED4000768D7 /* AddWorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B62797285B3ED4000768D7 /* AddWorkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		327622262859D6B2006DCF02 /* Macula-Shaded.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Macula-Shaded.ttf"; sourceTree = "<group>"; };
 		327622282859D72F006DCF02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3276222B2859EB4C006DCF02 /* WorkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkListView.swift; sourceTree = "<group>"; };
+		32B62795285B37C0000768D7 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		32B62797285B3ED4000768D7 /* AddWorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 			children = (
 				3276220F2859D553006DCF02 /* SchoolPackApp.swift */,
 				3276222B2859EB4C006DCF02 /* WorkListView.swift */,
+				32B62797285B3ED4000768D7 /* AddWorkView.swift */,
+				32B62795285B37C0000768D7 /* ListRowView.swift */,
 				327622112859D553006DCF02 /* ContentView.swift */,
 				327622232859D68F006DCF02 /* Launch Screen.storyboard */,
 			);
@@ -173,10 +179,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3276222C2859EB4C006DCF02 /* WorkListView.swift in Sources */,
+				32B62798285B3ED4000768D7 /* AddWorkView.swift in Sources */,
 				327622192859D555006DCF02 /* Persistence.swift in Sources */,
 				327622122859D553006DCF02 /* ContentView.swift in Sources */,
 				3276221C2859D555006DCF02 /* SchoolPack.xcdatamodeld in Sources */,
 				327622102859D553006DCF02 /* SchoolPackApp.swift in Sources */,
+				32B62796285B37C1000768D7 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct WorkListView: View {
+    
+    @State var items: [String] = [
+        "This is the first title!",
+        "This is the second!",
+        "Third!"
+    ]
+    
     var body: some View {
         List {
-            Text("Hi!")
+            ForEach(items, id: \.self) { item in
+                ListRowView(title: item)
+            }
         }
         .navigationTitle("Assignments")
-        Image(systemName: "book.closed.circle.fill")
-        
-
+        .navigationBarItems(
+            leading: EditButton(),
+            trailing:
+                NavigationLink("New", destination: Text("Destination"))
+        )
     }
 }
 

@@ -13,7 +13,7 @@ struct SchoolPackApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WorkListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
